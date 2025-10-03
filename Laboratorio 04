@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<body>
+    <h1>"Mis comidas favoritas"</h1>
+    <ul>
+        <li>Arroz chaufa</li>
+        <li>Ají de gallina</li>
+        <li>Espesado</li>
+    </ul>
+    <h1>"Algoritmo sencillo"</h1>
+    <ol>
+        <li>Preparar la masa</li>
+        <li>Echarle salsa de tomate y  queso a la masa</li>
+        <li>Agregarle los ultimos ingredientes</li>
+        <li>Listo, tienes una pequeña pizza</li>
+</body>
+</html>
