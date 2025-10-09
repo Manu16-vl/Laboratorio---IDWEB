@@ -1,0 +1,22 @@
+body{
+    background-color:white; 
+    font-family: Arial, sans-serif;
+}
+h1{
+    color:green
+}
+p{
+    font-style: italic;
+}
+.titulo{
+    color:red;
+    text-align: center;
+    font-size: 24px;
+}
+.caja{
+    display:inline-block;
+    background: yellow;
+    padding: 10px;
+    margin: 15px;
+    border: 2px solid blue;
+}
