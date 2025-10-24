@@ -6,3 +6,35 @@ header{
   text-align: center;
   padding: 80px 20px;
 }
+nav{
+    flex-grow: 1;
+    background: black;
+    color:white;
+    text-align: center;
+    flex-grow: 1; 
+    font-weight: bold;
+}
+nav a{
+    margin: 0px 15px;
+}
+.Tarjetas{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: stretch;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+.Tarjeta{
+    background: rgb(193, 185, 185);
+    text-align: center;
+    padding: 30px 195px;
+    border-radius: 10px;
+    font-weight: bold;
+}
+footer{
+    flex-grow: 1;
+    background: black;
+    color:white;
+    text-align: center;
+    flex-grow: 1; 
+}
