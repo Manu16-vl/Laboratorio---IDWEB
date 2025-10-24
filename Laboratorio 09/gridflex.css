@@ -1,0 +1,75 @@
+/* --- General --- */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  background-color: #f4f4f4;
+}
+/* --- GRID PRINCIPAL --- */
+.contenedor {
+  display: grid;
+  grid-template-areas:
+    "header header"
+    "nav nav"
+    "main aside"
+    "footer footer";
+  grid-template-columns: 3fr 1fr; /* main = 75%, aside = 25% */
+  grid-template-rows: auto auto 1fr auto;
+  gap: 10px;
+  padding: 10px;
+}
+/* --- Secciones del Grid --- */
+header {
+  grid-area: header;
+  background-color: #4CAF50;
+  color: white;
+  text-align: center;
+  padding: 15px;
+  border-radius: 8px;
+}
+nav {
+  grid-area: nav;
+  background-color: #2196F3;
+  color: white;
+  text-align: center;
+  padding: 10px;
+  border-radius: 8px;
+}
+main {
+  grid-area: main;
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap; /* para que se acomoden si hay muchos artículos */
+  justify-content: space-around;
+}
+aside {
+  grid-area: aside;
+  background-color: #ffcc80;
+  padding: 10px;
+  border-radius: 8px;
+}
+footer {
+  grid-area: footer;
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 15px;
+  border-radius: 8px;
+}
+/* --- Artículos con el modelo de cajas --- */
+article {
+  background-color: white;
+  border: 2px solid #ccc;
+  border-radius: 10px;
+  padding: 15px;
+  margin: 5px;
+  flex: 1 1 30%; /* que ocupen el mismo ancho flexible */
+  box-shadow: 2px 2px 5px rgba(0,0,0,0.1);
+}
+article h2 {
+  color: #4CAF50;
+}
+article:hover {
+  border-color: #4CAF50;
+  transform: scale(1.02);
+  transition: all 0.3s;
+}

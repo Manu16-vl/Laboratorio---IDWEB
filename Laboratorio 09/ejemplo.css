@@ -1,0 +1,18 @@
+.tarjeta {
+  border: 2px solid black;
+  padding: 15px;
+  margin: 10px;
+  text-align: center;
+}
+
+/* Estilo especial para la tarjeta 2 */
+.tarjeta2 {
+  background-color: lightblue;
+  border-color: blue;
+}
+
+/* Estilo especial para la tarjeta 3 */
+.tarjeta3 {
+  background-color: lightgreen;
+  border-color: green;
+}

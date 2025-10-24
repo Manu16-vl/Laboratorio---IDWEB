@@ -1,0 +1,33 @@
+/* --- Estilos generales --- */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  padding: 20px;
+  text-align: center;
+}
+
+/* --- Contenedor principal --- */
+.contenedor {
+  display: flex;                     /* activa el modo flexbox */
+  justify-content: space-around;     /* separa las tarjetas de manera uniforme */
+  flex-wrap: wrap;                   /* permite que bajen si no caben */
+  margin-top: 20px;
+}
+
+/* --- Cada tarjeta --- */
+.tarjeta {
+  background-color: white;
+  border: 2px solid #ccc;            /* borde */
+  border-radius: 10px;               /* bordes redondeados */
+  width: 250px;                      /* ancho fijo */
+  padding: 15px;                     /* espacio interno (padding) */
+  margin: 10px;                      /* espacio externo entre tarjetas */
+  box-shadow: 2px 2px 8px rgba(0,0,0,0.1); /* sombra para dar relieve */
+  transition: transform 0.3s ease;   /* animación suave */
+}
+
+/* --- Efecto al pasar el mouse --- */
+.tarjeta:hover {
+  transform: scale(1.05);            /* aumenta ligeramente el tamaño */
+  border-color: #007bff;             /* cambia el color del borde */
+}

@@ -1,0 +1,109 @@
+/* --- Configuración general --- */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f4f6f8;
+  color: #333;
+}
+
+/* --- Grid principal: Sidebar + Contenido --- */
+.dashboard {
+  display: grid;
+  grid-template-columns: 250px 1fr; /* sidebar fija, contenido flexible */
+  min-height: 100vh;
+}
+
+/* --- SIDEBAR --- */
+.sidebar {
+  background-color: #1e2a38;
+  color: white;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.sidebar h2 {
+  text-align: center;
+  margin-bottom: 30px;
+  letter-spacing: 1px;
+}
+
+.sidebar ul {
+  list-style: none;
+}
+
+.sidebar li {
+  margin: 15px 0;
+}
+
+.sidebar a {
+  color: #cbd5e1;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.sidebar a:hover {
+  color: #4ade80; /* verde suave */
+}
+
+/* --- CONTENIDO PRINCIPAL --- */
+.contenido {
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+}
+
+header h1 {
+  margin-bottom: 5px;
+}
+
+header p {
+  color: #666;
+  margin-bottom: 20px;
+}
+
+/* --- Sección de tarjetas con FLEX --- */
+.tarjetas {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px; /* espacio entre tarjetas */
+  justify-content: space-around;
+}
+
+/* --- Modelo de cajas aplicado a cada tarjeta --- */
+.tarjeta {
+  background-color: white;
+  border: 2px solid #e2e8f0;
+  border-radius: 10px;
+  padding: 20px;
+  margin: 5px;
+  width: 220px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Efecto al pasar el mouse */
+.tarjeta:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 12px rgba(0,0,0,0.15);
+  border-color: #38bdf8; /* celeste */
+}
+
+.tarjeta h3 {
+  color: #2563eb;
+  margin-bottom: 10px;
+}
+
+.tarjeta p {
+  font-size: 1.5em;
+  font-weight: bold;
+  color: #111;
+}

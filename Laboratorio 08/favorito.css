@@ -1,0 +1,18 @@
+a:link {
+  color: green;                 
+  background-color: #ccffcc;    
+  text-decoration: none;
+  border-radius: 5px;
+}
+a:visited {
+  color: purple;                
+  background-color: #e6ccff;   
+}
+a:hover {
+  color: red;                   
+  background-color: #ffd6d6;    
+}
+a:active {
+  color: orange;                
+  background-color: #fff0cc;    
+}

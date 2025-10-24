@@ -1,0 +1,9 @@
+div{
+    color: green;
+}
+ div p{
+    color: red;
+
+} h2 +p{
+    color: burlywood; 
+}
