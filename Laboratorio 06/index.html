@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Suscripción al Boletín</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Bienvenido a Nuestro Sitio</h1>
+  </header>
+  <nav>
+    <a href="#">Inicio</a>
+    <a href="#formulario">Suscríbete</a>
+    <a href="#">Contacto</a>
+  </nav>
+  <main>
+    <section class="intro">
+      <h2>¡Mantente informado con nuestras novedades!</h2>
+      <p>Haz clic en <strong>Suscríbete</strong> para recibir las últimas noticias y promociones.</p>
+    </section>
+
+    <section id="formulario" class="formulario">
+      <form action="#" method="post">
+        <label for="nombre">Nombre completo:</label>
+        <input type="text" id="nombre" name="nombre" placeholder="Tu nombre..." required>
+
+        <label for="correo">Correo electrónico:</label>
+        <input type="email" id="correo" name="correo" placeholder="tunombre@correo.com" required>
+
+        <div class="checkbox">
+          <input type="checkbox" id="promocionales" name="promocionales">
+          <label for="promocionales">Acepto recibir correos promocionales</label>
+        </div>
+
+        <div class="botones">
+          <input type="submit" value="Suscribirme">
+          <input type="reset" value="Limpiar">
+        </div>
+      </form>
+    </section>
+  </main>
+</body>
+</html>
+
+
