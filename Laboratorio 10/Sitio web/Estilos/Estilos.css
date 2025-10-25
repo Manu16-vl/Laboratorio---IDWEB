@@ -15,6 +15,7 @@ nav{
     font-weight: bold;
 }
 nav a{
+    color: white;
     margin: 0px 15px;
 }
 .Tarjetas{
@@ -37,4 +38,94 @@ footer{
     color:white;
     text-align: center;
     flex-grow: 1; 
+}
+/*servicios*/
+.servicios {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+}
+
+.card {
+  background: #f4f4f4;
+  text-align: center;
+  padding: 20px;
+  border-radius: 8px;
+  transition: 0.3s;
+}
+.card:hover {
+  background: #ddd;
+}
+/*Portafolio*/
+.proyecto {
+  background: #f4f4f4;
+  text-align: center;
+  align-items: center;
+  padding: 20px;
+  margin:20px;
+  border-radius: 8px;
+  transition: 0.3s;
+  height: 100px;
+}
+.proyecto:hover {
+  background: #ddd;
+}
+/*Nosotros*/
+.Nosotros {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+}
+.equipo {
+  background: #f4f4f4;
+  text-align: center;
+  padding: 20px;
+  border-radius: 8px;
+  transition: 0.3s;
+}
+.equipo:hover {
+  background: #ddd;
+}
+/*Contacto*/
+.formulario-contacto {
+  width: 100%;
+  max-width: 500px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  text-align: left;
+}
+
+.formulario-contacto label {
+  font-weight: bold;
+}
+
+.formulario-contacto input,
+.formulario-contacto textarea {
+  width: 100%;
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  font-size: 1rem;
+}
+
+.formulario-contacto button {
+  background-color: #333;
+  color: white;
+  border: none;
+  padding: 10px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.formulario-contacto button:hover {
+  background-color: #555;
+}
+
+/* MARCA LA PÁGINA ACTUAL EN EL MENÚ */
+.navbar a.activo {
+  text-decoration: underline;
+  color: #00ccff;
 }

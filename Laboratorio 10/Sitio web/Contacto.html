@@ -3,12 +3,11 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width,initial-scale=1.0">
-        <title>Agencia-Aeternum Web</title>
+        <title>Agencia Aeternum Web</title>
         <link rel="stylesheet" href="Estilos/Estilos.css">    
     </head>
 </html>
 <body>
-    <!--Navbar-->
     <nav>
         <a href="Index.html">Inicio</a>
         <a href="servicios.html">Servicios</a>
@@ -17,17 +16,27 @@
         <a href="Contacto.html">Contacto</a>
     </nav>
     <header>
-        <h1>Bienvenidos a Agencia-Aeternum Web</h1>
+        <h1>Bienvenidos a Agencia Aeternum Web</h1>
         <p>Especialistas en diseño y desarrollo de sitios web</p>
     </header>
-    <br>
-    <div class="Tarjetas">
-        <div class="Tarjeta">Diseño Moderno</div>
-        <div class="Tarjeta">Código limpio</div>
-        <div class="Tarjeta">Responsive</div>
-    </div>
+    <h2>Contáctanos</h2>
+    <p>Envíanos un mensaje y te responderemos pronto.</p>
+
+    <form class="formulario-contacto" action="#" method="post">
+      <label for="nombre">Nombre completo:</label>
+      <input type="text" id="nombre" name="nombre" required>
+
+      <label for="correo">Correo electrónico:</label>
+      <input type="email" id="correo" name="correo" required>
+
+      <label for="mensaje">Mensaje:</label>
+      <textarea id="mensaje" name="mensaje" rows="5" required></textarea>
+
+      <button type="submit">Enviar</button>
+    </form>
 <!--Footer-->
     <footer>
         <p>© 2025 Agencia - Aeternum Web </p>
     </footer>
+</html>
 </body>
