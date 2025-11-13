@@ -3,45 +3,56 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Suscripción al Boletín</title>
+  <title>Cursos</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <header>
-    <h1>Bienvenido a Nuestro Sitio</h1>
+    <h1>Inscripción a Cursos</h1>
+    <nav>
+      <a href="index.html">Inicio</a>
+      <a href="registro.html">Registro</a>
+      <a href="lenguajes.html">Lenguajes</a>
+      <a href="validacion.html">Validación</a>
+      <a href="cursos.html">Cursos</a>
+    </nav>
   </header>
-  <nav>
-    <a href="#">Inicio</a>
-    <a href="#formulario">Suscríbete</a>
-    <a href="#">Contacto</a>
-  </nav>
+
   <main>
-    <section class="intro">
-      <h2>¡Mantente informado con nuestras novedades!</h2>
-      <p>Haz clic en <strong>Suscríbete</strong> para recibir las últimas noticias y promociones.</p>
-    </section>
+    <form>
+      <label>Nombre:</label>
+      <input type="text" required>
 
-    <section id="formulario" class="formulario">
-      <form action="#" method="post">
-        <label for="nombre">Nombre completo:</label>
-        <input type="text" id="nombre" name="nombre" placeholder="Tu nombre..." required>
+      <label>Apellido:</label>
+      <input type="text" required>
 
-        <label for="correo">Correo electrónico:</label>
-        <input type="email" id="correo" name="correo" placeholder="tunombre@correo.com" required>
+      <label>Documento de identidad:</label>
+      <input type="text" required>
 
-        <div class="checkbox">
-          <input type="checkbox" id="promocionales" name="promocionales">
-          <label for="promocionales">Acepto recibir correos promocionales</label>
-        </div>
+      <label>Correo electrónico:</label>
+      <input type="email" required>
 
-        <div class="botones">
-          <input type="submit" value="Suscribirme">
-          <input type="reset" value="Limpiar">
-        </div>
-      </form>
-    </section>
+      <label>Selecciona un curso:</label>
+      <select required>
+        <option value="">--Seleccionar--</option>
+        <option>Desarrollo Web</option>
+        <option>Base de Datos</option>
+        <option>Programación en Java</option>
+      </select>
+      <p><strong>Modalidad:</strong></p>
+      <label><input type="radio" name="modalidad" value="Presencial" required> Presencial</label>
+      <label><input type="radio" name="modalidad" value="Virtual"> Virtual</label>
+      <p><strong>Horarios disponibles:</strong></p>
+      <label><input type="checkbox" name="horario" value="Mañana"> Mañana</label>
+      <label><input type="checkbox" name="horario" value="Tarde"> Tarde</label>
+      <label><input type="checkbox" name="horario" value="Noche"> Noche</label>
+      <label>Comentarios adicionales:</label>
+      <textarea rows="4"></textarea>
+      <div class="botones">
+        <input type="submit" value="Enviar">
+        <input type="reset" value="Restablecer">
+      </div>
+    </form>
   </main>
 </body>
 </html>
-
-
