@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Laboratorio 16 - Eventos y JSON</title>
+    <style>
+        .oscuro {
+            background-color: #222;
+            color: white;
+        }
+        .miniatura {
+            width: 80px;
+            margin: 5px;
+            cursor: pointer;
+        }
+        #imagen-grande {
+            width: 300px;
+            margin-top: 10px;
+        }
+        #cuadrado {
+            width: 80px;
+            height: 80px;
+            background: red;
+            position: relative;
+            transition: transform 1s;
+        }
+        .mover {
+            transform: translateX(200px);
+        }
+        table {
+            border-collapse: collapse;
+            margin-top: 10px;
+        }
+        td, th {
+            border: 1px solid black;
+            padding: 6px;
+        }
+        .completada {
+            color: green;
+            font-weight: bold;
+        }
+        .pendiente {
+            color: red;
+        }
+    </style>
+</head>
+<body>
+<h1>Laboratorio 16 – Eventos y JSON</h1>
+<p id="parrafo">Texto original</p>
+<button id="btnCambio">Cambiar texto</button>
+<button id="btnModo">Modo oscuro</button>>
+<h3>Contador interactivo</h3>
+<button id="btnMenos">−</button>
+<span id="contador">0</span>
+<button id="btnMas">+</button>
+<p id="msgContador"></p>
+<h3>Lista dinámica</h3>
+<input id="inputItem" placeholder="Nuevo ítem">
+<button id="btnAgregar">Agregar</button>
+<button id="btnEliminar">Eliminar último</button>
+<ul id="lista"></ul>
+<h3>Validación formulario</h3>
+<form id="formValidar">
+    <label>Nombre: <input id="nombre"></label><br>
+    <label>Correo: <input id="correo"></label><br>
+    <button type="submit">Enviar</button>
+</form>
+<h3>Galería</h3>
+<div id="galeria">
+    <img class="miniatura" src="https://via.placeholder.com/100/ff0000">
+    <img class="miniatura" src="https://via.placeholder.com/100/00ff00">
+    <img class="miniatura" src="https://via.placeholder.com/100/0000ff">
+</div>
+<img id="imagen-grande" src="https://via.placeholder.com/300">
+<button id="btnTabla">Generar tabla</button>
+<div id="contenedorTabla"></div>
+<h3>Lista con delegación</h3>
+<ul id="listaDelegacion">
+    <li>Manzana</li>
+    <li>Plátano</li>
+    <li>Naranja</li>
+</ul>
+<h3>Animación</h3>
+<div id="cuadrado"></div>
+<button id="btnMover">Mover</button>
+<button id="btnReiniciar">Reiniciar</button>
+<h3>CRUD Usuarios</h3>
+<input id="crudNombre" placeholder="Nombre">
+<input id="crudEdad" placeholder="Edad" type="number">
+<button id="crudAgregar">Agregar usuario</button>
+<table>
+    <thead>
+        <tr><th>Nombre</th><th>Edad</th><th>Acciones</th></tr>
+    </thead>
+    <tbody id="crudTabla"></tbody>
+</table>
+<button id="btnJSON1">Convertir objeto a JSON</button>
+<p id="jsonToObj"></p>
+<ul id="listaProductos"></ul>
+<p id="usuarioLS"></p>
+<div id="tablaLibros"></div>
+<button id="btnModificarJSON">Modificar JSON</button>
+<input id="nombre20" placeholder="Tu nombre">
+<button id="btnGuardar20">Guardar en JSON</button>
+<ul id="listaTareas"></ul>
+<h3>Simulador de perfil</h3>
+<form id="formPerfil">
+    <input id="perfilNombre" placeholder="Nombre">
+    <input id="perfilEdad" placeholder="Edad">
+    <input id="perfilPais" placeholder="País">
+    <button type="submit">Guardar perfil</button>
+</form>
+<p id="perfilMostrado"></p>
+<script src="laboratorio 16.js"></script>
+</body>
+</html>

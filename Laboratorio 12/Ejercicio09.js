@@ -1,0 +1,1 @@
+const esPositivo = numero => numero>0 ? `${numero} es mayor a 0`:`${numero} es menor/igual a 0`;  

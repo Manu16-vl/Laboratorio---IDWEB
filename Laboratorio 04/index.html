@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="es">
+<!--'<html lang='es'> especifíca el lenguaje de la página, en español-->
+<head>
+    <meta charset="UTF-8">
+    <!--'<meta charset="UTF-8">' especifíca los caracteres que considera la página-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Esta parte del código permite redimensionar la pagina dependiendo del dispositivo-->
+    <title>Laboratorio 4</title>
+    <!--Esta parte titula la página (la pestaña)-->
+</head>
+<body>
+    <!-- Encabezado y lista desordenada sobre comidas favoritas-->
+    <h1 id="#seccionComidas">-5 Comidas Favoritas: </h1>
+    <ul>
+        <li>Arroz con pollo</li>
+        <li>Ají de Gallina</li>
+        <li>Ceviche</li>
+        <li>Pizza</li>
+        <li>Arroz chaufa</li>
+    </ul>
+    <!-- Encabezado y lista ordenada de pasos de un algoritmo simple-->
+    <h1>-Pasos para un algortimo de registro de alumnos</h1>
+    <ol>
+        <li>Se pide el tamaño del registro de alumnos</li>
+        <li>Se crea un registro con un arreglo, del tamaño especificado, y un contador en '0'</li>
+        <li>Con un 'do while', se pide el nombre de los alumnos</li>
+        <li>Cada nombre se guarda en registro[contador], y en cada vuelta se suma 1 al contador</li>
+        <li>El bucle 'do while' se repite hasta que contador=arreglo.length</li>
+    </ol>
+    <!-- Encabezado y lista ordenada de pasos de un algoritmo con condicionales y repeticiones-->
+    <h1>-Pasos para un algortimo de ordenamiento burbuja</h1>
+    <ol>
+        <li>Se recibe un arreglo/ArrayList desordenado </li>
+        <li>Con un 'for', se recorre cada elemento del arreglo/ArrayList</li>
+        <li>Con un 'if', se compara si cada elemento es mayor al siguiente en posición</li>
+        <li>Si el 'if' es verdadero, el valor se guarda en una variable temporal, el
+            valor actual se reemplaza por el siguiente y el siguiente por el valor temporal
+        </li>
+        <li>Se devuelve el arreglo/ArrayList ordenado</li>
+    </ol>
+    <!-- Encabezado y lista anidada sobre hobbies y sus implementos propios-->
+    <h1>-Hobbies</h1>
+    <ol type"I">
+        <li>Tocar bajo</li>
+            <ul>
+                <li>Bajo electrico</li>
+                <li>Amplificador de bajo</li>
+                <li>Cables</li>
+                <li>Puas</li>
+                <li>Metronomo/afinador</li>
+                <li>Pedalera</li>
+            </ul>
+        <li>Tocar guitarra</li>
+            <ul>
+                <li>Guitarra electrica/acustica</li>
+                <li>Amplificador de guitarra</li>
+                <li>Cables</li>
+                <li>Puas</li>
+                <li>Metronomo/afinador</li>
+                <li>Pedalera</li>
+            </ul>
+        <li>Dibujar</li>
+            <ul>
+                <li>Hoja/cartulina/lienzo</li>
+                <li>Lapices/portamina</li>
+                <li>Borrador</li>
+                <li>Marcador delineador</li>
+                <li>Lapices de colores/pintura</li>
+            </ul>
+        <li>Ver peliculas</li>
+            <ul>
+                <li>Televisor/computadora/celular</li>
+                <li>Pagina web/servicio de streaming</li>
+                <li>Tiempo</li>
+            </ul>
+    </ol>
+    <p>
+        <a href="https://www.google.com" target="_blank">Abrir Google en nueva pestaña</a><br>
+        <!-- Hipervínculo externo hacia nueva pestaña-->
+        <a href="cuenta.html">Ir a pagina de cuenta</a><br>
+        <!-- Hipervínculo interno hacia cuenta.html-->
+        <a href="#seccionComidas">Ir a sección Comidas</a><br>
+        <!-- Hipervínculo externo hacia sección de la pagina (#id)-->
+        <a href="https://www.google.com" target="_blank">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/e/e1/Google_Chrome_icon_%28February_2022%29.svg" alt="Logo de Google" width="100">
+        <!-- Hipervínculo enlace+imagen: abre una ventana nueva-->     
+    </p>
+</body>
+</html>

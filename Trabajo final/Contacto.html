@@ -1,23 +1,66 @@
 <!DOCTYPE html>
-<html>
-    <head>
+<html lang="es">
+<head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Manuel - ito</title>
+    <title>Pokémon | Contacto</title>
     <link rel="stylesheet" href="style.css">
-    </head>
+</head>
 <body>
-    <header>
-        <div class="logo-contenedor">
-            <img src="/Imagenes/LogoPokemon.jpg" alt="Logo pokemon" class="logo">
-        </div>
-        <nav>
-            <a href="Pokemon.html">Inicio</a>
-            <a href="Tipos.html">Tipos de Pokemon</a>
-            <a href="Juegos.html">Juegos de Pokemon</a>
-            <a href="SyP.html">Series y Peliculas</a>
-            <a href="Contacto.html">Unete a nuestra Comunidad</a>
-        </nav>
-    </header> 
+
+<header class="header">
+    <img class="logo"
+         src="https://upload.wikimedia.org/wikipedia/commons/9/98/International_Pokémon_logo.svg"
+         alt="Pokémon Logo">
+
+    <nav>
+        <a href="Pokemon.html">Inicio</a>
+        <a href="Tipos.html">Tipos</a>
+        <a href="SyP.html">Series y Películas</a>
+        <a href="Juegos.html">Juegos</a>
+        <a href="Contacto.html">Contacto</a>
+    </nav>
+</header>
+
+<main>
+
+    <!-- INTRO -->
+    <section>
+        <h2>Contacto</h2>
+        <p>
+            Esta sección permite a los usuarios enviar comentarios, sugerencias
+            u opiniones relacionadas con el contenido del sitio web Pokémon.
+            La información enviada es procesada por el servidor para su validación.
+        </p>
+    </section>
+
+    <!-- FORMULARIO -->
+    <section>
+        <h2>Formulario de contacto</h2>
+        <p>
+            Completa el siguiente formulario para comunicarte con nosotros.
+            Todos los campos son obligatorios.
+        </p>
+
+        <form action="/enviar" method="post" id="formContacto">
+
+            <label for="nombre">Nombre completo</label>
+            <input type="text" id="nombre" name="nombre" required>
+
+            <label for="email">Correo electrónico</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="mensaje">Mensaje</label>
+            <textarea id="mensaje" name="mensaje" rows="5" required></textarea>
+
+            <button type="submit">Enviar mensaje</button>
+        </form>
+    </section>
+</main>
+
+<footer>
+    <p>Contacto Pokémon © 2025</p>
+</footer>
+
+<script src="js/validacion.js"></script>
 </body>
-</html>  
+</html>
